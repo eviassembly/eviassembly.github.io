@@ -1,0 +1,186 @@
+{
+  "schema_version": "showcase-1.0",
+  "object_id": "illustrative_cabinet",
+  "name": "Sliding cabinet",
+  "category": "Storage",
+  "geometry": {
+    "source": "Original project-authored parameterized illustration",
+    "units": "arbitrary; not measured CAD",
+    "parts": [
+      {
+        "id": "frame",
+        "name": "Base panel",
+        "p": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          2.5,
+          0.16,
+          1.8
+        ],
+        "color": "#a9c1b3",
+        "explode": [
+          0,
+          -0.35,
+          0
+        ]
+      },
+      {
+        "id": "left",
+        "name": "Left side",
+        "p": [
+          -1.17,
+          1,
+          0
+        ],
+        "size": [
+          0.16,
+          2,
+          1.8
+        ],
+        "color": "#397d72",
+        "explode": [
+          -0.8,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "right",
+        "name": "Right side",
+        "p": [
+          1.17,
+          1,
+          0
+        ],
+        "size": [
+          0.16,
+          2,
+          1.8
+        ],
+        "color": "#397d72",
+        "explode": [
+          0.8,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "top",
+        "name": "Top panel",
+        "p": [
+          0,
+          2,
+          0
+        ],
+        "size": [
+          2.5,
+          0.16,
+          1.8
+        ],
+        "color": "#a9c1b3",
+        "explode": [
+          0,
+          0.8,
+          0
+        ]
+      },
+      {
+        "id": "drawer",
+        "name": "Drawer",
+        "p": [
+          0,
+          0.9,
+          0.12
+        ],
+        "size": [
+          2.05,
+          0.8,
+          1.5
+        ],
+        "color": "#dba16c",
+        "explode": [
+          0,
+          0,
+          1.5
+        ]
+      },
+      {
+        "id": "handle",
+        "name": "Handle",
+        "p": [
+          0,
+          0.9,
+          0.96
+        ],
+        "size": [
+          0.65,
+          0.12,
+          0.12
+        ],
+        "color": "#355554",
+        "explode": [
+          0,
+          0,
+          1.7
+        ]
+      },
+      {
+        "id": "rail",
+        "name": "Guide rail",
+        "p": [
+          -1.04,
+          0.6,
+          0
+        ],
+        "size": [
+          0.08,
+          0.12,
+          1.65
+        ],
+        "color": "#355554",
+        "explode": [
+          -0.25,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "review_status": "illustrative_not_independently_reviewed",
+  "evidence": {
+    "type": "expert_hypothesis",
+    "source": "Project-authored teaching example; no source-object or physical-test evidence"
+  },
+  "relations": [
+    {
+      "from": "rail",
+      "to": "drawer",
+      "type": "guides_motion",
+      "label": "Rail → drawer",
+      "mechanism": "A prismatic guide allows translation along one axis and limits transverse movement.",
+      "conditions": "The guides remain aligned, engaged and adequately supported.",
+      "result": "The drawer can move outward while remaining guided.",
+      "intervention": "Removing a guide may permit skewing or jamming. The outcome depends on the remaining supports."
+    },
+    {
+      "from": "left",
+      "to": "top",
+      "type": "supports",
+      "label": "Side → top panel",
+      "mechanism": "The side panel provides one part of the load path beneath the top.",
+      "conditions": "The joints remain connected and the material can carry the applied load.",
+      "result": "Loads can pass from the top into the frame.",
+      "intervention": "Removing the side changes the load path; stability depends on the remaining connections."
+    }
+  ],
+  "reasoning_tasks": {
+    "compose": "Combine a shell, drawer and aligned guides to create accessible storage.",
+    "decompose": "One possible decomposition is a shell, drawer, guides and handle. Other storage mechanisms are possible.",
+    "intervene": "If a rail becomes misaligned, will the drawer still move freely? Identify the assumed clearance.",
+    "transfer": "Compare drawer guides with a sliding door: both constrain translation, with different support and load requirements."
+  },
+  "limitations": "Not an accepted dataset record, simulated outcome or measured model result."
+}

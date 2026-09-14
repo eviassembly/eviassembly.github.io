@@ -1,0 +1,33 @@
+{
+  "format": "illustrative_evaluation_plan_v1",
+  "status": "template_not_executed",
+  "comparison": {
+    "baseline": "ordinary part annotations",
+    "treatment": "expert relation annotations",
+    "controls": [
+      "same base model",
+      "same source object set",
+      "matched training budget",
+      "same evaluation inputs"
+    ],
+    "split": "hold out design families; keep their screenshots and paraphrases together"
+  },
+  "metrics": [
+    "task correctness",
+    "evidence support",
+    "intervention errors"
+  ],
+  "results": {
+    "baseline_score": null,
+    "relation_score": null,
+    "sample_count": null,
+    "uncertainty": null
+  },
+  "requirements_before_execution": [
+    "independently reviewed evaluation references",
+    "agreed scoring rubric",
+    "source-use scope",
+    "frozen split"
+  ],
+  "note": "No measured model result is included in this template."
+}

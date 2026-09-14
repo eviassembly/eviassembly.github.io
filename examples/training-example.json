@@ -1,0 +1,23 @@
+{
+  "format": "illustrative_training_example_v1",
+  "status": "demonstration_only_not_accepted_training_data",
+  "object_id": "illustrative_scissors",
+  "task": "relation_intervention",
+  "split": "demonstration_only",
+  "source_relation": {
+    "from": "pivot",
+    "to": "blade_a",
+    "type": "revolute_joint"
+  },
+  "input": {
+    "question": "What happens to the usual open–close cutting action if relative blade rotation is completely locked?",
+    "assumptions": "The pivot is locked; the other stated conditions are held fixed."
+  },
+  "target": {
+    "answer": "Completely locking relative rotation blocks the usual open–close cutting action.",
+    "evidence_type": "conditional_hypothesis",
+    "independent_review": "pending"
+  },
+  "training_run": null,
+  "observed_model_gain": null
+}

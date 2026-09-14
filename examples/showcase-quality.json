@@ -1,0 +1,77 @@
+{
+  "report_type": "automated_showcase_reference_and_field_checks",
+  "objects_checked": 5,
+  "relations_checked": 10,
+  "passed": true,
+  "checks": [
+    {
+      "object_id": "illustrative_cabinet",
+      "parts": 7,
+      "relations": 2,
+      "checks": {
+        "unique_part_ids": true,
+        "relation_endpoints_resolve": true,
+        "relation_fields_present": true,
+        "four_reasoning_directions_present": true,
+        "illustrative_status_retained": true
+      }
+    },
+    {
+      "object_id": "illustrative_chair",
+      "parts": 6,
+      "relations": 2,
+      "checks": {
+        "unique_part_ids": true,
+        "relation_endpoints_resolve": true,
+        "relation_fields_present": true,
+        "four_reasoning_directions_present": true,
+        "illustrative_status_retained": true
+      }
+    },
+    {
+      "object_id": "illustrative_table",
+      "parts": 6,
+      "relations": 2,
+      "checks": {
+        "unique_part_ids": true,
+        "relation_endpoints_resolve": true,
+        "relation_fields_present": true,
+        "four_reasoning_directions_present": true,
+        "illustrative_status_retained": true
+      }
+    },
+    {
+      "object_id": "illustrative_door",
+      "parts": 4,
+      "relations": 2,
+      "checks": {
+        "unique_part_ids": true,
+        "relation_endpoints_resolve": true,
+        "relation_fields_present": true,
+        "four_reasoning_directions_present": true,
+        "illustrative_status_retained": true
+      }
+    },
+    {
+      "object_id": "illustrative_scissors",
+      "parts": 3,
+      "relations": 2,
+      "checks": {
+        "unique_part_ids": true,
+        "relation_endpoints_resolve": true,
+        "relation_fields_present": true,
+        "four_reasoning_directions_present": true,
+        "illustrative_status_retained": true
+      }
+    }
+  ],
+  "source_sha256": "91ce33f89b6d3be6b07c83f3a489bd3d8fec3eda694fd544c109f47bd9f02ced",
+  "scope": "Original illustrative records only; reference integrity and required fields.",
+  "not_checked": [
+    "physical correctness",
+    "source-product evidence",
+    "independent human agreement",
+    "training benefit"
+  ],
+  "accepted_human_records": 0
+}
